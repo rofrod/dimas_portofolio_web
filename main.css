@@ -6,47 +6,69 @@
     text-decoration: none;
 }
 
+body {
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height:70px;
-    background-color: yellow;
-
+    background-color: #ffbe0b;
+    border-bottom: 6px outset rgb(209, 21, 200);
 }
 
 .list-link {
     margin-right: 30px;
 }
 
+.list-link li a{
+    margin-right: 10px;
+    font-weight: bold;
+}
+
 .img-monster{
     width: auto;
     height: 40px;
-    margin-left: 30px;
 }
 
 .logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 30px;
 }
 
-
+.logo a{
+    margin-right: 10px;
+    background-color: rgb(219, 1, 1);
+    border-radius: 30px;
+    border: 3px outset rgb(0, 0, 0);
+}
 .my-foto {
     width: 300px;
     height: auto;
 }
 
 .utama {
-    background-color: aqua;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
-    height: 90vh;
+    width: 100%;
+    height: 100vh;
+    background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, white 100%),
+    linear-gradient(to right, rgba(251, 133, 0, 1) 0%, rgba(142, 202, 230, 1) 59%, rgba(33, 158, 188, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 }
 
-body {
-    padding: none;
+.welcome-text {
+    padding-left: 15px;
 }
