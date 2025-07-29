@@ -72,3 +72,9 @@ body {
 .welcome-text {
     padding-left: 15px;
 }
+
+.about-section {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+}
