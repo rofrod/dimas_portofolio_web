@@ -73,8 +73,62 @@ body {
     padding-left: 15px;
 }
 
-.about-section {
+.container {
+    padding: 10px;
     display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 3;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(100px, 120px) 500px;
+    grid-template-areas: 
+    'biography biography'
+    'personal skills'
+    ;
+    row-gap: 50px;
+    column-gap: 10px;
+}
+
+.kalimat-pengantar {
+    grid-area: biography;
+}
+
+.kalimat-pengantar h1{
+    font-size: 40px;
+}
+
+.kalimat-perkenalan {
+    font-family: "lexend", Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.personal-info {
+    grid-area: personal;
+    /* display: flex; */
+    /* flex-direction: column; */
+    border: 6px solid rgb(255, 123, 0);
+    justify-content: space-between;
+    text-align: start;
+    
+}
+
+.skills {
+    grid-area: skills;
+    border: 6px solid rgb(0, 132, 255);
+}
+
+.info {
+    padding: 10px;
+    height: 100%;
+}
+
+.ul-skills {
+    margin-top: 20px;
+    line-height: 23px;
+}
+
+.ul-personal {
+    margin-top: 20px;
+    line-height: 23px;
 }
