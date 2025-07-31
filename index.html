@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section>
+    <section class="nav-sec">
         <nav class="navbar">
             <div class="logo">
                 <a href="logo-link">
@@ -20,13 +20,13 @@
 
             <div class="navbar-link">
                 <ul class="list-link">
-                    <li>
-                         <a href="#">HOME</a>
-                         <a href="#about">ABOUT</a>
-                         <a href="#">SERVICE</a>
-                         <a href="#">PORTOFOLIO</a>
-                         <a href="#">BLOG</a>
-                         <a href="#">CONTACT</a>
+                    <li class="nav-grid">
+                         <a class="home-a" href="#">HOME</a>
+                         <a class="about-a href="#about">ABOUT</a>
+                         <a class="service-a href="#">SERVICE</a>
+                         <a class="portofolio-a href="#">PORTOFOLIO</a>
+                         <a class="blog-a href="#">BLOG</a>
+                         <a class="contact-a href="#">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -34,7 +34,7 @@
     </section>
     <section class="utama">
         
-        <div class="welcome-text">
+        <div id="HOME" class="welcome-text">
             <h2>WELCOME I'M DIMAS</h2>
             <h1>I AM FRONTEND DEVELOPER </h1>   
             <P>Aku adalah seorang Web Developer pemula dan ini adalah CV utama ku </P>
@@ -82,5 +82,17 @@
         </div>
     </section>
 
+    <section id="SERVICE"></section>
+
+    <section>
+        <footer>
+            <p>&copy; <span id="year"></span> Dimas Nugroho. Semua hak dilindungi.</p>
+        </footer>
+        <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </section>
+
+    
 </body>
 </html>
