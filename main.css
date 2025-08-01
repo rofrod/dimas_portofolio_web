@@ -79,9 +79,17 @@ body {
     border: 2px solid rgb(187, 184, 3);
     border-radius: 20px;
     margin-right: 10px;
+    transition: 0.10s ease-in;
 }
 
+.nav-btn:hover {
+    background-color: rgba(255, 252, 63, 0.671);
+}
 
+.nav-btn:active {
+    background-color: rgb(255, 208, 0);
+    color: white;
+}
 
 .img-monster{
     width: auto;
@@ -120,7 +128,6 @@ body {
     width: 100%;
     background-color: #fff;
 }
-
 
 .utama {
     display: flex;
